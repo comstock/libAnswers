@@ -1,0 +1,313 @@
+
+<style>
+
+/*FOOTER STYLING*/
+.hl_footer {
+	background:#1E1E1E;
+	padding-top: 55px;
+	padding-bottom: 35px;
+	font-family:'Trueno', 'Montserrat', sans-serif;
+	font-weight: 300;
+}
+.hl_footer-ask {
+	max-width:1450px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.hl_footer-ask-logo svg {
+	width: 100%;
+}
+.hl_footer ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+.hl_footer li {
+	margin:10px 0;
+}
+
+.container.hl_footer a, .container.hl_footer h4, .container.hl_footer li {
+	color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+    text-transform: uppercase;
+    letter-spacing: 1.87px
+}
+.hl_footer-policy p {
+    font-size: 14px !important;
+    line-height: 19px !important;
+    color: silver !important;
+    font-weight: 300 !important;
+}
+
+.hl_footer-ask-logo {
+	text-align:center;
+}
+.hl_footer-contact h4, .hl_footer-extlinks li:first-of-type, .hl_footer-policy h4 {
+	margin-top:0;
+}
+
+/*FOOTER LINKS*/
+.hl_footer-contact a, .hl-footer_extlinks a {
+	font-weight:200;
+	transition:border 0.28s cubic-bezier(0.28,1.08,1,0.96);
+}
+
+.hl_footer-contact a:hover, .hl_footer-extlinks a:hover,
+.hl_footer-contact a:focus, .hl_footer-extlinks a:focus {
+	border-bottom: 3px solid rgba(255,255,255,0.3);
+    padding-bottom: 3px;
+    text-decoration: none;
+    color:#fff;
+}
+
+@media (max-width:991px) {
+	.hl_footer-ask {
+		max-width:750px;
+		margin:0 auto;
+	}
+}
+
+.hl_footer .hl_footer-a11y a {text-transform:none;}
+
+
+
+
+/*------------------------------------------------------------------------------*/
+
+/*HIDING*/
+
+/*hide # answers, search all/group part of search bar*/
+.navbar-text, .s-la-navbrowse {
+	display:none;
+}
+
+/*hide "search faqs" title on single search and faq page*/
+.s-la-page-public.s-la-page-single.search h1, .s-la-page-public.s-la-page-faq h1 {
+	display:none;
+}
+
+/*"search results for:" header on search results page*/
+.s-srch-top-header {
+	display:none;
+}
+.s-srch-askbutton p.alert.alert-info {
+	background-color:transparent;
+	border-color:transparent;
+}
+.s-srch-askbutton .alert {
+	padding:0;
+}
+
+/*REMOVE PADDING FROM ALERT WHEN THERE IS A RESULTS LIST*/
+.col-md-9 .row .s-srch-askbutton .alert {
+	padding:0 15px;
+}
+.s-srch-askbutton .btn {
+	display:none;
+}
+
+
+/*hide topics, keywords, groups filters on search results page*/
+#s-srch-source-0 .row .col-md-3 {
+	display:none;
+}
+
+/*hide previous banner header*/
+#s-la-public-banner {
+	display:none;
+}
+
+/*hide breadcrumbs*/
+#s-la-bc {
+	display:none;
+}
+
+.s-la-breadcrumbs {
+    display:none;
+}
+
+/*hide question meta data (last updated, views)*/
+.s-la-faq-listing-meta, .s-srch-result-meta {
+	display:none;
+}
+
+/*remove springshare footer info*/
+#s-la-public-footer {
+	display:none;
+}
+
+
+
+/*remove bottom border between questions */
+li.s-la-faq-listing {
+	border:none;
+	margin-bottom:0;
+}
+.s-srch-result {
+	border:none;
+}
+
+
+
+/*------------------------------------------------------------------------------*/
+
+@media (max-width:768px) {
+	.container {
+		padding:20px 20px 0px 20px;
+	}
+	.navbar-toggle {
+		margin:0 0 8px 0;
+	}
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+		border:none;
+	}
+	.container.hl_footer {
+		padding:40px 0px;
+	}
+}
+.navbar-form {
+	padding:0;
+	margin:0;
+}
+
+@media (max-width:610px) {
+	section.hl_header-ask {
+		flex-wrap:wrap;
+	}
+	.hl_header-ask-logo {
+		width:100% !important;
+	}
+	button.s-la-searchform-button:after {
+		display:none;
+	}
+	button.s-la-searchform-button {
+		width:auto;
+	}
+}
+
+
+@media(max-width:620px){
+	.s-la-content-faqlist ul {
+		column-count: 1;
+	}
+	.hl__asklib__details {
+		display: block;
+		padding: 20px;
+	}
+	.hl__asklib__alert--title {
+	  margin-bottom: 10px;
+	}
+}
+
+
+
+/*UNDER CONSTRUCTION*/
+.under-construction {
+	height:80px;
+	background:red;
+}
+.under-construction p {
+	height:40px;
+	padding:30px 0;
+	text-align:center;
+	color:#fff !important;
+	font-weight:400;
+	font-family:'Trueno','Montserrat',sans-serif;
+	line-height:22px !important;
+}
+.under-construction a {
+	color:#fff;
+	text-decoration:underline;
+}
+@media (max-width:970px) {
+	.under-construction p {
+		padding:20px 0;
+		font-size:16px !important;
+	}
+}
+@media (max-width:510px) {
+	.under-construction p {
+		padding:8px 0;
+	}
+}
+@media (max-width:340px) {
+	.under-construction {
+		height:100px;
+	}
+}
+
+
+/* MIGHT BE NEEDED - HELPS STYLE THE SEARCH BAR, BUT DIF FROM COVID19 PAGE */
+.s-la-navbrowse {display: none;}
+
+.navbar-right {display:none;}
+
+.s-la-color-bars {color:#333;}
+
+@media (min-width: 100px) {
+    .navbar-form .s-la-content-search-query {width: 600px; display:block;}
+}
+
+@media (min-width: 992px) {
+    .navbar-form .s-la-content-search-query {width: 800px;}
+}
+@media (min-width: 1200px) {
+    .navbar-form .s-la-content-search-query {width: 1010px;}
+}
+
+/* word animation */
+.hl__hero__options {
+	display: inline;
+	font-weight: 700;
+}
+	
+.hl__hero__space {
+	border-bottom: 1px solid #1e1e1e;
+}
+
+.hl__hero__space::after {
+	content: "";
+	width: 100%;
+	display: inline-block;
+	width: 220px;
+}
+
+.hl__hero__options span {
+	opacity:0;
+	position: absolute;
+	width: 220px;
+	text-align: center;
+	animation: topToBottom 15s linear infinite 0s;
+}
+
+.hl__hero__options span:nth-child(2) {
+	animation-delay: 2.5s;
+}
+.hl__hero__options span:nth-child(3) {
+	animation-delay: 5s;
+}
+.hl__hero__options span:nth-child(4) {
+	animation-delay: 7.5s;
+}
+.hl__hero__options span:nth-child(5) {
+	animation-delay: 10s;
+}
+.hl__hero__options span:nth-child(6) {
+	animation-delay: 12.5s;
+}
+
+@keyframes topToBottom{
+	0% {opacity: 0;}
+	2% {opacity: 0; transform: translateY(-30px);}
+	5% {opacity: 1; transform: translateY(0px);}
+	17% {opacity: 1; transform: translateY(0px);}
+	20% {opacity: 0; transform: translateY(30px);}
+	80% {opacity: 0; }
+	100% {opacity: 0; }
+}
+
+</style>

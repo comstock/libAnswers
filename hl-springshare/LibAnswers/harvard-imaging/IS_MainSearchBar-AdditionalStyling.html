@@ -1,0 +1,306 @@
+<style>
+/*MAIN SEARCH BAR - ADDITIONAL STYLING*/
+
+/*PADDING ABOVE H1*/
+h1#s-la-public-header-title {
+	margin-top:50px;
+}
+
+/*SEARCH BOX*/
+.s-la-content-search {
+	text-align: left;
+}
+#s-la-content-search-97830 .form-group {
+	border:1px solid #1e1e1e;
+	border-radius:3px;
+}
+#s-la-content-search-query-97830 {
+	padding:5px 10px;
+	margin:0 2px 0 0;
+	height:60px;
+	font-family:'Trueno','Montserrat',sans-serif;
+	font-size:18px;
+	border-radius: 3px;
+	border-color:transparent;
+	color: #6c6c6c;
+}
+#s-la-content-search-query-97830:focus {
+	border:1px solid #66afe9;
+}
+
+/*OVERALL WIDTH OF BOX*/
+body:not(.s-la-page-home)  .navbar-form .s-la-content-search-query {
+	width: 100%;
+}
+@media (min-width: 768px) {
+	body:not(.s-la-page-home)  .navbar-form .s-la-content-search-query {
+		min-width:610px !important;
+	}
+}
+@media(min-width: 100px){
+	body.s-la-page-home .navbar-form .s-la-content-search-query {
+		max-width: 100%;
+	}
+}
+
+/*WIDTH OF SEARCH BUTTON*/
+.col-xs-3.s-la-searchform-buttoncol {
+	max-width: 115px;
+	float:right;
+}
+
+/*SEARCH BUTTON*/
+button.s-la-searchform-button, .s-la-searchform-button:active, .s-la-searchform-button:focus, .s-la-searchform-button:hover {
+	color: #1E1E1E;
+  font-weight: 700;
+  border-color: transparent !important;
+  border-left: 1px solid #1e1e1e !important;
+  background: #fff;
+  margin: 10px 1px;
+  padding: 10px 20px;
+  border-radius: 0;
+  font-size: 13px;
+  float:right;
+  max-width:115px;
+	line-height: 16px;
+}
+.s-la-searchform-button:focus, .s-la-searchform-button:hover {
+	color: #6c6c6c !important;
+	background:#fff !important;
+}
+
+/*RIGHT FACING ARROW > */
+button.s-la-searchform-button::after, #s-la-content-link-98152 a::after {
+	border-bottom: 0.425em solid transparent;
+	border-left: 0.5em solid currentColor;
+	border-top: 0.425em solid transparent;
+	content: "";
+	display: inline-block;
+	height: 0;
+	width: 0;
+	margin-left: 0.3em;
+	opacity: 0.6;
+	background-image: none;
+	padding-right: 0;
+	color: #0579b8;
+}
+button.s-la-searchform-button::after {
+	opacity: 1;
+}
+
+/*FONT OF AUTOCOMPLETE LIST*/
+ul#s-la-content-search-query-97830_list {
+	font-family:'Trueno','Montserrat',sans-serif;
+	font-weight: 300;
+}
+
+/*KEEP SEARCH BOX OPEN*/
+.navbar-header {
+	display:none;
+}
+#s-la-browsebar-collapse {
+	display:block;
+}
+
+/*"How can Imaging Services help?" TEXT BEFORE SEARCHBOX <!-- EDIT CUSTOMIZE IMAGING --> */
+body:not(.s-la-page-home) #s-la-searchform-97830:before {
+    content: "How can Imaging Services help?";
+    margin-right: 20px;
+    flex: none;
+    font-family: 'Trueno','Montserrat',sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    line-height: 60px;
+    text-transform: uppercase;
+    float: left;
+}
+body.s-la-page-home #s-la-page-title-bar {
+  margin-top: 20px;
+}
+body.s-la-page-home #s-la-page-title-bar::before {
+  content: "How can ITS help?";
+  font-family: 'Trueno','Montserrat',sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 42px;
+  margin-bottom: 0.4em;
+}
+body.s-la-page-home #s-la-page-title-bar > .navbar {
+  margin-top: 20px;
+}
+
+/*HIDE "How can Imaging Services help?" WHEN SCREEN GETS TOO SMALL - WORK ON FIXING LATER <!-- EDIT CUSTOMIZE IMAGING --> */
+@media (max-width: 768px) {
+	body:not(.s-la-page-home) #s-la-searchform-97830:before {
+		content:"";
+	}
+}
+
+
+
+/*------------------------------------------------------------------------------*/
+
+
+
+/*PADDING & ALIGNMENT*/
+#s-la-content-search-97830 .col-xs-9, #s-la-content-search-97830 .col-xs-3.s-la-searchform-buttoncol, .s-la-box-content, .navbar-collapse {
+	padding:0;
+}
+#s-la-page-title-bar .navbar-form, .s-la-color-bars {
+	padding-left:0;
+}
+.s-la-box-container {
+	margin:40px 0;
+}
+
+
+/*SEARCH RESULTS BOX*/
+/* #s-la-box-55074-container {
+	margin-bottom:0p;
+} */
+.navbar {
+	padding-right:40px;
+}
+
+/*SEE ALL SERVICES*/
+#s-la-content-link-98152 {
+	text-align: right;
+
+}
+#s-la-content-link-98152 a {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 14px;
+}
+
+/*WIDTH OF ANSWERS*/
+#s-srch-source-0 .row .col-md-9,
+#s-la-box-56347-container /* FIND OUT WHAT THIS POINTS TO */,
+#s-la-content-faqlist-98149  {
+	max-width:930px;
+}
+
+/*EXPLORE OUR SERVICES BOX*/
+.s-la-page-home  .s-la-box-title h2 {
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  /* font-weight: normal !important; */
+  /* font-size: 16px !important; */
+  /* line-height: 19px !important; */
+}
+#s-la-box-98775-container {
+  /* margin-top: 20px; */
+}
+.s-la-content-faqlist ul {
+	margin:0;
+	column-count: 2;
+	column-gap: 60px;
+	list-style:disc;
+  padding-left: 20px;
+}
+.s-la-content-faqlist li::marker, li::marker {
+  color: #eb001b;
+}
+.s-la-content-faqlist li a {
+  font-size: 16px !important;
+  line-height: 24px !important;
+}
+
+
+
+/*NEWS-PROJECTS-CONTACT*/
+#s-la-box-98776-container {
+	padding:20px 0;
+	border-top:1px solid rgb(192,192,192);
+}
+
+/*SEARCH BOX ON RESULTS + ANSWER PAGES*/
+/*TOP*/ .s-la-header, .s-la-box-title {
+	padding: 0 0 10px 0;
+}
+
+/* MORE HELP THREE-UP */
+#s-la-content-text-98151 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hl__asklib {
+	padding: 0 30px 30px 30px;
+  display: flex;
+}
+.hl__asklib svg {
+  margin-right: 15px;
+  height: 100px;
+  width: 100%;
+  max-width: 100px;
+  min-width:80px;
+}
+.hl__asklib p, .hl__asklib p a {
+  text-align: left;
+  font-size: 16px !important;
+}
+.hl__asklib h2 {
+  font-family: "Trueno", "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  margin: 0;
+}
+
+@media(max-width:992px){
+	.hl__asklib h2 {
+	  font-size: 24px;
+	  line-height: 32px;
+	  margin: 0;
+	}
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+
+/*SEARCH RESULTS PAGE*/
+
+/*SHOWING # - # (OF #)*/
+.s-srch-range.pull-left {
+	color: #6c6c6c;
+    font-family: 'Trueno', 'Montserrat', sans-serif;
+    font-size: 15px;
+	font-weight: 300;
+    line-height: 25px;
+}
+
+/*SORT BY BUTTON*/
+#s-srch-sort-0-btn, #s-srch-sort-0-btn {
+	padding:1px 5px;
+	font-size:12px;
+	line-height:1.5;
+	border-color:#adadad !important;
+	background:#e6e6e6 !important;
+	color:#1e1e1e !important;
+}
+
+/*DROPDOWN MENU*/
+ul.dropdown-menu li a {
+	font-size:16px !important;
+	color:#1e1e1e !important;
+}
+ul.dropdown-menu li a:hover {
+	border-bottom:none !important;
+}
+
+#s-srch-source-0 .row .col-md-9:nth-child(4), #s-srch-source-0 .row .col-md-9:nth-child(5) {
+	display:none;
+}
+
+/*PAGINATION*/
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+	color:#fff !important;
+}
+
+
+
+/*------------------------------------------------------------------------------*/
+
+</style>

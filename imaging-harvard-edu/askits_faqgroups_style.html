@@ -1,0 +1,109 @@
+<style>
+/* Changes made by Gerry Walden (walden@fas.harvard.edu) -- last updated 4/6/22  */
+/* Source: https://asklib-its-harvard.libanswers.com/admin/groups/9771/general > Look and Feel > Custom JS/CSS
+/* Applied at the 'FAQ Group level -- ITS only has one 'FAQ Group' that contains our ten 'Queues' which the actual support request forms for our different teams
+/* ...so these styles apply to all of our question forms; though I used the numerical codes in the IDs of many elements to ensure that these changes only applied to a specific form in one of the ten Queues */
+
+
+
+/* Hide superfluous "Still haven't found what you're looking for?" text at the bottom of search results.
+   --It is part of Box #98774 on the "Search Results" page, but I don't see any way to edit the content of that box directly.
+ */
+#s-srch-results-container .s-srch-askbutton {
+    display: none;
+}
+
+/* Remove visible upper border from "Explore more by Topic" div */
+#s-la-box-98776-container {
+	padding: 20px 0;
+	border-top: 0px solid rgb(192,192,192)!important;
+        margin-top: 20px;
+}
+/* Center "News" and "Contact" */
+#s-la-content-text-106587 {
+        display: flex !important;
+        justify-content: center !important;
+}
+/* Reduce white space above footer */
+#s-la-box-107114-container {
+      margin-top: 10px;
+}
+#s-la-box-98776-container {
+    margin-bottom: 10px;
+}
+
+/* Widen "News" and "Contact" elements a bit */
+.hl__asklib {
+    width: 45%;
+}
+
+/* Question (queue) form 'submit' button div */
+#s-la-askform-buttons {
+display: table!important;
+margin: auto!important;
+}
+
+/*Filedrop (form field)*/
+/* 'Clear Files' button -- file upload form (drag-and-drop) -- change 'position' from 'absolute' to 'static'.
+/* Button was displaying out of alignment with the rest of the form group*/
+button.btn.btn-default.btn-xs.s-ui-filedrop-clear {
+	position:static;
+}
+
+/* 'Close' button */
+button.close {
+width: 25px;
+border: 2px solid rgb(30,30,30)!important;
+}
+
+/* Filedrop 'Selected Files' list -- change font-sized from 0.9em to 1.0em for easier reading*/
+.s-ui-filedrop-filenames {
+font-size: 1.0em !important
+}
+
+/* Set widget activator button (e.g. 'submit your questions and feedback' button) to match styles of  .hl__button--secondary */
+#s-la-widget-activator-16471 {
+    background-color: #0579b8;
+    /*border-color: transparent;*/
+    color: white;
+    border: 2px solid transparent!important;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Trueno", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.17px;
+    line-height: 19px;
+    padding: 12px 23px;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+#s-la-widget-activator-16471:hover {
+    background-color: #2a5280!important;
+}
+
+/* Bold and center the 'header' text at the top of the Dataloads implementation / config change request form */
+/*    --> https://asklib-its-harvard.libanswers.com/form?queue_id=6020 */
+#s-la-askform-section-9171 > legend {
+    font-weight:bold;
+    text-align:center;
+}
+
+/* Set Queue Form width to be wider when viewed on larger screen (more in line with appearance on smaller screen)*/
+/* Change margin from 25% --> 15% */
+/* Change col width from 50% --> 70% */
+/* Gerald Walden -- 7/20/22 */
+@media (min-width: 992px) {
+	.col-md-offset-3 {
+		margin-left: 15%!important;
+	}
+	.col-md-6 {
+		width: 70%!important;
+	}
+}
+
+</style>
